@@ -24,14 +24,14 @@ resource "google_compute_instance" "my_instance" {
     }
 }
 
-resource "google_compute_network" "terraform_network" {
-    name = "terraform-network"
-    auto_create_subnetworks = false
-}
+# resource "google_compute_network" "terraform_network" {
+#     name = "terraform-network"
+#     auto_create_subnetworks = false
+# }
 
-resource "google_compute_subnetwork" "terraform_subnet" {
-  name = "terraform-subnet"
-  ip_cidr_range = "10.20.0.0/16"
-  region = "us-central1"
-  
-}
+# resource "google_compute_subnetwork" "terraform_subnet" {
+#   name = "terraform-subnet"
+#   ip_cidr_range = "10.20.0.0/16"
+#   region = "us-central1"
+
+# }
