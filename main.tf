@@ -32,4 +32,6 @@ resource "google_compute_network" "terraform_network" {
 resource "google_compute_subnetwork" "terraform_subnet" {
   name = "terraform-subnet"
   ip_cidr_range = "10.20.0.0/16"
+  region = "us-central1"
+  
 }
